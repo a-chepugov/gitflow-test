@@ -1,5 +1,5 @@
 const http = require('http')
 
-http.createServer(() => {
-    console.log('DEBUG:index.js():4 =====================>')
+http.createServer((request) => {
+    console.log('DEBUG:index.js():4 =====================>', request.url)
 }).listen(3000)
